@@ -3,8 +3,8 @@ LectureLens allows students of all kinds to input course material and receive a 
 
 ## Local setup
 1. copy `.env.example` -> `.env.local` and fill values
-2. yarn install
-3. yarn dev
+2. npm install
+3. npm run dev
 
 ## Tech
 - Next.js + TypeScript
