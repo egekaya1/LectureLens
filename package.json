@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@ai-sdk/openai": "^2.0.68",
+    "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.81.1",
     "ai": "^5.0.93",
     "dotenv": "^17.2.3",
