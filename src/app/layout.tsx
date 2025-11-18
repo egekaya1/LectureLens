@@ -4,6 +4,7 @@ import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
 import Navbar from "@/components/Navbar";
 import SupabaseSetupCheck from "@/components/SupabaseSetupCheck";
+import AuthSessionSync from "@/components/AuthSessionSync";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AuthProvider>
+          <AuthSessionSync />
           <Navbar />
           {children}
           <SupabaseSetupCheck />

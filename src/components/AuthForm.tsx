@@ -79,9 +79,9 @@ export default function AuthForm() {
           setMessage("Account created! Redirecting to dashboard...");
           // Force a session refresh
           await supabase.auth.refreshSession();
+          router.refresh();
           setTimeout(() => {
             router.push("/dashboard");
-            router.refresh();
           }, 1000);
         }
       }
@@ -123,9 +123,9 @@ export default function AuthForm() {
         }
       } else if (data.user) {
         setMessage("Signed in successfully! Redirecting...");
+        router.refresh();
         setTimeout(() => {
           router.push("/dashboard");
-          router.refresh();
         }, 500);
       }
     } catch (err) {
